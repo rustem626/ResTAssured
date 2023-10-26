@@ -36,6 +36,20 @@ public class ZippoTestExtract {
         Assert.assertEquals(countryName,"Canada");
     }
 
+    @Test //negative Test
+    public void extractingJsonPath2 () {
+        String stateName =
+                given()
+                        .when()
+                        .get("http://api.zippopotam.us/us/90210") // http hok ise baseUri baş tarafına gelir.
+                        .then()
+                        .extract().path("places[0].state")
+                ;
+        System.out.println("countryName = " + stateName);
+        Assert.assertEquals(stateName,"California");
+    }
+
+
 }
 
 
