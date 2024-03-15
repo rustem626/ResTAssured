@@ -12,7 +12,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <argLine>-Duser.language=en</argLine>
+        <argLine>-Duster.language=en</argLine>
     </properties>
 
     <dependencies>
@@ -23,7 +23,7 @@
             <version>5.2.0</version>
         </dependency>
 
-        <dependency> <!-- for writing tests (mac için 6.8.7)-->
+        <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.4.0</version>

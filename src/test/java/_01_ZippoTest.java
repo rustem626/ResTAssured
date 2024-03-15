@@ -35,8 +35,8 @@ public class _01_ZippoTest {
                 .get("http://api.zippopotam.us/us/90210")
 
                 .then()
-                .log().body() // dönen body json data , log().all() : gidip gelen her şey
-                .statusCode(200) // test kısmı olduğundan assertion status code 200 mü
+                .log().body()
+                .statusCode(200)
         ;
     }
 
@@ -49,9 +49,9 @@ public class _01_ZippoTest {
                 .get("http://api.zippopotam.us/us/90210")
 
                 .then()
-                .log().body() // dönen body json data , log().all() : gidip gelen her şey
-                .statusCode(200) // test kısmı olduğundan assertion status code 200 mü
-                .contentType(ContentType.JSON)  // dönen datanın tipi JSON mı
+                .log().body()
+                .statusCode(200)
+                .contentType(ContentType.JSON)
         ;
     }
 
