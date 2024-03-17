@@ -99,8 +99,7 @@ public class _01_ZippoTest {
                 .then()
                 .log().body()
                 .statusCode(200)  // assertion
-                .body("places.'place name'", hasItem("Dörtağaç Köyü")) //assertion
-        ;
+                .body("places.'place name'", hasItem("Dörtağaç Köyü"));
     }
 // Soru : "http://api.zippopotam.us/us/90210"  endpoint in dönen
     // place dizisinin dizi uzunluğunun 1 olduğunu doğrulayınız.
@@ -116,8 +115,7 @@ public class _01_ZippoTest {
                 .then()
                 .log().body()
                 .statusCode(200)  // assertion
-                .body("places", hasSize(1)) //assertion
-        ;
+                .body("places", hasSize(1));
     }
 
     @Test
