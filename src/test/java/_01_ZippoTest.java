@@ -128,7 +128,7 @@ public class _01_ZippoTest {
                 .then()
                 .log().body()
                 .statusCode(200)  // assertion
-                .body("places", hasSize(1)) //assertion
+                .body("places", hasSize(1))
                 .body("places[0].state", equalTo("California"))
         ;
     }
