@@ -65,7 +65,7 @@ public class _01_ZippoTest {
 
                 .then()
                 .log().body()
-                .statusCode(200)  // assertion
+                .statusCode(200)
                 .body("country", equalTo("United States")) //assertion
         ;
     }
